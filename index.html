@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuja Sheth | Strategic Customer Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Fonts inspired by the reference site -->
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@800;900&family=Open+Sans:wght@700;800&family=Lato:wght@300;700;900&family=La+Belle+Aurore&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sk-cream': '#F9F8F6',
+                        'sk-dark': '#1A1A1A',
+                        'sk-mustard': '#D4A017', /* Similar to the yellow/mustard accent */
+                        'sk-border': '#E5E5E5',
+                        'sk-slate': '#4A5568'
+                    },
+                    fontFamily: {
+                        serif: ['Newsreader', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'marquee': 'marquee 45s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #F9F8F6; color: #1A1A1A; }
+        
+        /* Typography Scale */
+        .text-display { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; letter-spacing: -0.02em; }
+        
+        /* Brand Fonts */
+        .brand-siemens { font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em; }
+        .brand-autozone { font-family: 'Open Sans', sans-serif; font-weight: 800; text-transform: uppercase; font-style: italic; letter-spacing: -0.05em; }
+        .brand-natgeo { font-family: 'Playfair Display', serif; font-weight: 700; text-transform: uppercase; border: 2px solid currentColor; padding: 0 4px; font-size: 0.9em; }
+        .brand-bloomberg { font-family: 'Lato', sans-serif; font-weight: 900; letter-spacing: 0.05em; }
+        .brand-nasdaq { font-family: 'Montserrat', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; }
+        .brand-chaipe { font-family: 'La Belle Aurore', cursive; font-weight: 700; }
+        .brand-elcita { font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.2em; }
+        
+        /* Grayscale to Color Interaction */
+        .logo-item { 
+            filter: grayscale(100%); 
+            opacity: 0.5; 
+            transition: all 0.4s ease; 
+        }
+        .logo-item:hover { 
+            filter: grayscale(0%); 
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+    <!-- Top Navigation (Clean, Bordered) -->
+    <nav class="fixed top-0 w-full z-50 bg-sk-cream/95 backdrop-blur-sm border-b border-sk-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-medium tracking-tight">Rutuja Sheth</a>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide uppercase">
+                <a href="#about" class="hover:text-sk-mustard transition">About</a>
+                <a href="#services" class="hover:text-sk-mustard transition">Services</a>
+                <a href="#impact" class="hover:text-sk-mustard transition">Impact</a>
+                <a href="#contact" class="px-5 py-2 bg-sk-dark text-white rounded-full hover:bg-sk-mustard transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Split Layout like Reference) -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 border-b border-sk-border bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Text -->
+            <div class="md:col-span-7">
+                <h1 class="text-display font-serif font-medium mb-8 text-sk-dark">
+                    Helping Startups & <br>Enterprises Turn <br> 
+                    <span class="text-sk-mustard italic">Customers into Partners.</span>
+                </h1>
+                <p class="text-xl text-sk-slate leading-relaxed mb-10 max-w-xl font-light">
+                    Customer Success strategies rooted in empathy and data. <br>
+                    Over 9 years of experience helping companies like <strong>Sprinklr</strong> and <strong>Siemens</strong> reduce churn and realize value.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="px-8 py-4 bg-sk-dark text-white font-medium rounded-sm hover:bg-sk-mustard transition shadow-lg">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border border-sk-border text-sk-dark font-medium rounded-sm hover:border-sk-dark transition bg-transparent">
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual (Abstract/Graphic) -->
+            <div class="hidden md:block md:col-span-5 relative">
+                <!-- Abstract Geometric Shape -->
+                <div class="aspect-square bg-sk-cream rounded-full relative overflow-hidden border border-sk-border p-8 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-[radial-gradient(#D4A017_1px,transparent_1px)] [background-size:20px_20px] opacity-20"></div>
+                    <div class="text-center relative z-10">
+                        <span class="block text-6xl font-serif text-sk-mustard mb-2">9+</span>
+                        <span class="block text-sm uppercase tracking-widest text-sk-dark">Years Experience</span>
+                        <div class="w-12 h-1 bg-sk-dark mx-auto mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Logo Strip (Scrolling with Font Styles) -->
+    <section class="py-16 border-b border-sk-border bg-sk-cream overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-sk-slate">Grateful to have contributed to teams at</p>
+        </div>
+        <div class="w-full inline-flex flex-nowrap overflow-hidden">
+            <div class="flex animate-marquee items-center gap-16 px-8">
+                <!-- List 1 -->
+                <span class="text-2xl logo-item font-serif font-bold text-sk-dark">Sprinklr</span>
+                <span class="text-2xl logo-item brand-siemens text-[#009999]">Siemens</span>
+                <span class="text-2xl logo-item brand-autozone text-[#D52B1E]">AutoZone</span>
+                <span class="text-2xl logo-item brand-natgeo text-[#FFCC00]">NatGeo</span>
+                <span class="text-2xl logo-item font-black tracking-tighter text-sk-dark">MagicPin</span>
+                <span class="text-2xl logo-item brand-bloomberg text-sk-dark">Bloomberg</span>
+                <span class="text-2xl logo-item brand-nasdaq text-[#005F9E]">NASDAQ</span>
+                <span class="text-2xl logo-item font-serif font-black lowercase text-sk-dark">Chobani</span>
+                <span class="text-2xl logo-item brand-chaipe text-sk-dark">ChaiPe</span>
+                <span class="text-2xl logo-item font-sans font-black tracking-widest uppercase text-sk-dark">FM Global</span>
+                <span class="text-2xl logo-item font-serif font-bold uppercase text-sk-dark">Jefferies</span>
+                <span class="text-2xl logo-item font-sans font-bold uppercase tracking-widest text-[#FF0000]">3M</span>
+                <span class="text-2xl logo-item brand-elcita text-sk-dark">ELCITA</span>
+                
+                <!-- List 2 (Repeat) -->
+                <span class="text-2xl logo-item font-serif font-bold text-sk-dark">Sprinklr</span>
+                <span class="text-2xl logo-item brand-siemens text-[#009999]">Siemens</span>
+                <span class="text-2xl logo-item brand-autozone text-[#D52B1E]">AutoZone</span>
+                <span class="text-2xl logo-item brand-natgeo text-[#FFCC00]">NatGeo</span>
+                <span class="text-2xl logo-item font-black tracking-tighter text-sk-dark">MagicPin</span>
+                <span class="text-2xl logo-item brand-bloomberg text-sk-dark">Bloomberg</span>
+                <span class="text-2xl logo-item brand-nasdaq text-[#005F9E]">NASDAQ</span>
+                <span class="text-2xl logo-item font-serif font-black lowercase text-sk-dark">Chobani</span>
+                <span class="text-2xl logo-item brand-chaipe text-sk-dark">ChaiPe</span>
+                <span class="text-2xl logo-item font-sans font-black tracking-widest uppercase text-sk-dark">FM Global</span>
+                <span class="text-2xl logo-item font-serif font-bold uppercase text-sk-dark">Jefferies</span>
+                <span class="text-2xl logo-item font-sans font-bold uppercase tracking-widest text-[#FF0000]">3M</span>
+                <span class="text-2xl logo-item brand-elcita text-sk-dark">ELCITA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me (Split Layout) -->
+    <section id="about" class="py-24 bg-white border-b border-sk-border">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <!-- Image Area -->
+            <div class="relative">
+                <div class="aspect-[4/5] bg-sk-border relative overflow-hidden rounded-sm">
+                    <!-- Photo: profile.jpg -->
+                    <img src="profile.jpg" 
+                         alt="Rutuja Sheth" 
+                         class="w-full h-full object-cover transition duration-700 hover:scale-105"
+                         onerror="this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center text-sk-slate bg-sk-border p-8 text-center\'><span class=\'font-serif italic text-xl\'>Rutuja Sheth</span><span class=\'text-xs tracking-widest uppercase mt-2\'>Image: profile.jpg</span></div>';">
+                </div>
+                <!-- Decorative Border -->
+                <div class="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-sk-mustard z-0"></div>
+            </div>
+
+            <!-- Text Area -->
+            <div>
+                <h2 class="text-4xl font-serif text-sk-dark mb-8">Hello, I'm Rutuja.</h2>
+                <div class="space-y-6 text-lg text-sk-slate leading-relaxed font-light">
+                    <p>
+                        I believe that at the heart of every software contract is a <span class="text-sk-mustard font-medium">human relationship.</span>
+                    </p>
+                    <p>
+                        For the past nine years, I’ve navigated the complex world of SaaS, working with global teams to solve difficult problems. My journey has taken me from engineering roles to managing multi-million dollar portfolios, but my focus has always remained the same: <strong>helping people succeed.</strong>
+                    </p>
+                    <p>
+                        I specialize in <strong>"Risk Modeling"</strong>—which is a fancy way of saying I look for early signs of unhappiness so we can fix them before it’s too late.
+                    </p>
+                    
+                    <div class="pt-8 mt-8 border-t border-sk-border">
+                        <p class="text-sm font-medium text-sk-dark mb-2">Life Offline:</p>
+                        <p class="text-base italic text-sk-slate">
+                            "When I'm not strategizing retention, I'm likely tending to my growing collection of plants 🌱, lost in a book, or exploring new trails with my dogs. 🐾"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services (Clean Grid) -->
+    <section id="services" class="py-24 bg-sk-cream border-b border-sk-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-serif text-sk-dark mb-4">How I Can Support Your Team</h2>
+                <p class="text-sk-slate">Flexible engagement models for startups and scale-ups.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Service 1 -->
+                <div class="bg-white p-10 shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-sk-mustard group">
+                    <div class="w-12 h-12 bg-sk-cream rounded-full flex items-center justify-center text-sk-mustard mb-6 text-xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-sk-dark mb-4">Fractional CS Lead</h3>
+                    <p class="text-sk-slate leading-relaxed font-light">
+                        Need a CS leader but not ready for a full-time hire? I can manage your key accounts and set up your retention strategy on a flexible, part-time basis.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-10 shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-sk-dark group">
+                    <div class="w-12 h-12 bg-sk-cream rounded-full flex items-center justify-center text-sk-dark mb-6 text-xl">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-sk-dark mb-4">The "Churn Audit"</h3>
+                    <p class="text-sk-slate leading-relaxed font-light">
+                        I will review your current customer data and processes to identify exactly why customers are leaving and give you a tactical roadmap to fix it.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-10 shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-sk-mustard group">
+                    <div class="w-12 h-12 bg-sk-cream rounded-full flex items-center justify-center text-sk-mustard mb-6 text-xl">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-sk-dark mb-4">CS Playbook Design</h3>
+                    <p class="text-sk-slate leading-relaxed font-light">
+                        I help early-stage startups build their first onboarding, renewal, and risk-mitigation playbooks to ensure consistency as you scale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Impact Section (2x2 Grid) -->
+    <section id="impact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-serif text-sk-dark mb-16 text-center">Stories of Impact</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Case Study 1 -->
+                <div class="p-10 bg-sk-cream border border-sk-border hover:border-sk-mustard transition duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sk-slate">Revenue</span>
+                        <span class="text-3xl font-serif font-bold text-sk-mustard">15%</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-sk-dark mb-4 group-hover:text-sk-mustard transition">Saving a Strategic Relationship</h3>
+                    <p class="text-sk-slate font-light mb-4">
+                        <strong>Situation:</strong> A Fortune 500 client was at high risk due to low adoption.
+                    </p>
+                    <p class="text-sk-slate font-light">
+                        <strong>Outcome:</strong> Implemented a 'Risk Model' to identify pain points, leading to a multi-year renewal and expansion.
+                    </p>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="p-10 bg-sk-cream border border-sk-border hover:border-sk-dark transition duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sk-slate">Risk</span>
+                        <span class="text-3xl font-serif font-bold text-sk-dark">100%</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-sk-dark mb-4 group-hover:text-sk-mustard transition">Streamlining for Scale</h3>
+                    <p class="text-sk-slate font-light mb-4">
+                        <strong>Situation:</strong> Missed churn signals due to data overload across global teams.
+                    </p>
+                    <p class="text-sk-slate font-light">
+                        <strong>Outcome:</strong> Automated "Red Flag" alerts, ensuring every at-risk account received immediate attention.
+                    </p>
+                </div>
+
+                <!-- Case Study 3 (New: NatGeo) -->
+                <div class="p-10 bg-sk-cream border border-sk-border hover:border-[#FFCC00] transition duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sk-slate">Adoption</span>
+                        <span class="text-3xl font-serif font-bold text-[#FFCC00]">40%</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-sk-dark mb-4 group-hover:text-[#FFCC00] transition">Unified Workflow Adoption</h3>
+                    <p class="text-sk-slate font-light mb-4">
+                        <strong>Situation:</strong> Siloed global teams at NatGeo were using disparate tools.
+                    </p>
+                    <p class="text-sk-slate font-light">
+                        <strong>Outcome:</strong> Created a unified playbook that increased platform stickiness and user adoption by 40%.
+                    </p>
+                </div>
+
+                <!-- Case Study 4 (New: AutoZone) -->
+                <div class="p-10 bg-sk-cream border border-sk-border hover:border-[#D52B1E] transition duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sk-slate">Efficiency</span>
+                        <span class="text-3xl font-serif font-bold text-[#D52B1E]">-20%</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-sk-dark mb-4 group-hover:text-[#D52B1E] transition">Operational Efficiency</h3>
+                    <p class="text-sk-slate font-light mb-4">
+                        <strong>Situation:</strong> High support resolution times impacting store operations.
+                    </p>
+                    <p class="text-sk-slate font-light">
+                        <strong>Outcome:</strong> Restructured escalation matrix, reducing resolution time and improving store satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-24 bg-sk-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-serif mb-8">Let’s start a conversation.</h2>
+            <p class="text-lg text-white/60 mb-12 font-light">
+                I am currently open to remote full-time roles and consulting projects. If you think we might be a good fit, I’d love to hear from you.
+            </p>
+            
+            <a href="mailto:rutuja.email@example.com" class="inline-block bg-white text-sk-dark px-12 py-4 rounded-full font-bold hover:bg-sk-mustard hover:text-white transition duration-300 shadow-lg">
+                Send me an email
+            </a>
+
+            <div class="mt-16 flex justify-center space-x-10 text-2xl">
+                <a href="#" class="hover:text-sk-mustard transition transform hover:-translate-y-1"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-sk-mustard transition transform hover:-translate-y-1"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-white/10 text-sm text-white/40">
+                <p>&copy; 2024 Rutuja Sheth. All rights reserved.</p>
+                <p class="mt-2 text-xs">Based in India • Serving Globally</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
